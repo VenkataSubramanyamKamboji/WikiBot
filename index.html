@@ -11,9 +11,10 @@
         <div class="chat-header">Wikipedia Chatbot</div>
         <div class="chat-messages" id="chat-messages"></div>
         <div class="chat-input">
-            <input type="text" id="user-input" placeholder="Type a message">
+            <input type="text" id="user-input" placeholder="Ask me anything about Wikipedia...">
             <button id="send-button">
-                <img src="send-icon.png" alt="Send" class="send-icon">
+                <img src="send-icon.png" alt="Send" class="send-icon" style="display: none;" onerror="this.style.display='none';" onload="this.style.display='block'; this.nextElementSibling.style.display='none';">
+                <span style="color: white; font-size: 20px;">➤</span>
             </button>
         </div>
     </div>
